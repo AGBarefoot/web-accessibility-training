@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:url" content="https://github.com/AGBarefoot/Web-Acessibility-Training" />
+    <link rel="canonical" href="https://github.com/AGBarefoot/Web-Acessibility-Training" />
+    <meta name="description" content="Customized  Hero Banner`s Layout With Increase Font`s Resource to Web Acessibility Training.">
+    <meta name="keywords" content="Web Acessibility, Wai-Aria, WCAG,Training, Ubuntu Last Hub Coworking." />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="robots" content="follow, index" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Web Acessibility Training | Ubuntu in Education</title>
+</head>
+<style>
+.section1{
+    display:flex;
+    height:100vh;
+    background-color:#E6E6FA
+}
+.centralize{
+    margin:auto;
+    text-align:center;
+}
+.blackbtn{
+        background-color:black;
+        border-radius:7px;
+        color:whitesmoke;
+        padding:20px;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size:18px;
+        
+    }
+</style>
+    <header>
+        <div class="container">
+            <div class="row">  
+                <a href="#" class="logo">
+                    <img src="logo.png" alt="Mountains">
+                </a>
+                <nav class="nav">  
+                    <ul role="navegation" class="nav__list nav__list--primary">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link"></a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link"></a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link"></a>
+                        </li>
+                    </ul>
+                    <ul role="navegation" class="nav__list nav__list--secondary"> 
+                        <li class="nav__item"> 
+                            <a href="https://mwpt.com.br/" class="nav__link nav_link--button" target=_blank>Web for All</a>
+                        </li>
+                        <li class="nav__item">
+                            <button name="increase-font" id="increase-font" class="nav__link nav__link--button" title="Increase-font" aria-labelledby="increase-font btn"><b>A +</b></button>    
+                            <button name="decrease-font" id="decrease-font" class="nav__link nav__link--button" title="Decrease-font" aria-labelledby="decrease-font btn" ><b>A -</b></button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="section1">
+            <div class="centralize">
+                <h1>Web Acessibility Training</h1>
+                <a href="https://www.facebook.com/Ubuntulasthub/" target= "_blank"><button class="blackbtn">Ubuntu Last Hub</button></a>
+            </div>
+             </div>
+             <br>   
+        <script type="text/javascript">
+            //From Everton da Luz´s JS
+                window.onload = function() {
+                    var elementBody = document.querySelector('body');
+                    var elementBtnIncreaseFont = document.getElementById('increase-font');
+                    var elementBtnDecreaseFont = document.getElementById('decrease-font');
+                    var fontSize = 100;
+                    var increaseDecrease = 10;
+              
+                    elementBtnIncreaseFont.addEventListener('click', function(event) {
+                        fontSize = fontSize + increaseDecrease;
+                        elementBody.style.fontSize = fontSize + '%';
+                    });
+            
+                    elementBtnDecreaseFont.addEventListener('click', function(event) {
+                        fontSize = fontSize - increaseDecrease;
+                        elementBody.style.fontSize = fontSize + '%';
+                    });
+                }
+            </script>
+    </body>
+    </html>

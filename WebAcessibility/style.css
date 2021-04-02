@@ -1,0 +1,191 @@
+
+*, *::before, *::after {box-sizing: border-box;}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif; 
+    font-size: 1.1rem; 
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col + .col {
+    margin-left: 100px;
+}
+
+    .sidebar .col {
+        margin-left: 0;
+        margin-bottom: 1.5em;
+    }
+
+
+
+header {
+    background-color: #136c72;
+    padding: 1em 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+  
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+   
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.nav__list--primary {
+    margin: 0 auto;
+}
+
+.nav__item {
+    
+    margin-right: 2em;  
+}
+
+    .nav__list--secondary .nav__item:last-child {
+        margin-right: 0;
+    }
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__link--button {
+    background: #fff;
+    color: #136c72;
+    padding: .25em 1em;
+    border-radius: 10em;
+}
+
+.nav__link:hover {
+    opacity: .75;
+}
+
+
+.hero {
+    padding: 5em 0;
+    background-color: #23424A;
+    color: white;
+    
+}
+
+    .hero__content {
+        width: 50%;
+        
+    }
+  
+
+h1 {
+    margin-top: 0;
+    font-size: 2.8rem; 
+    font-weight: 800;
+    line-height: 60px;
+}
+
+
+h2 {
+    font-size: 2 rem ;  
+    line-height: 2.8rem;
+    font-weight: 800;
+    margin: 0 0 1rem 0;
+}
+
+    h2.section-title {
+        color:black;
+    }
+
+
+h3 {
+    
+    font-size: 1.5rem;  
+    font-weight: 800;
+    margin: 0 0 1rem 0;
+    
+}
+
+    
+.hero p {
+    margin-bottom: 3em;
+}
+
+section.secondary p,
+section.primary p {
+    margin-bottom: 0;
+    font-size:1.2rem;
+}
+
+
+.btn {
+    background-color: #38CFD9;
+    display: inline-block;
+    padding: .75em 2em;  
+    border-radius: 100px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #23424A;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75;
+}
+
+.primary {
+    padding: 5em 0;
+}
+
+.secondary {
+    padding: 5em 0; 
+    background-color: #136C72;
+    color: white;
+}
+
+.main {
+    padding: 5em 0;
+}
+
+.primary-content {
+    width: 62%;
+}
+
+.sidebar {
+    width: 32%;
+    text-align: center;
+    padding: 2em;
+    color: #fff;
+    background-color: #136c72;
+}
