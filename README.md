@@ -1,3 +1,3 @@
 # web-accessibility-training
-Customized Layout to Web Accessibilty Training.
+Customized Layout for Web Accessibilty Training.
 To Community.
